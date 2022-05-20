@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASAI CALCULATOR USING COMBINATORS</title>
+    <style>
+        body > h1{
+            width: 320px;
+            margin: auto;
+            font-size: 43px;
+            color: teal;
+            margin-top: 20px;
+        }
+        #container{
+            width: 320px;
+            height: 350px;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 50px;
+            border-radius: 5px;
+            font-weight: bolder;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+        }
+        table{
+            border: 0px;
+            margin: auto;
+            width: 200px;
+            height: 250px;
+            text-align: center;
+            border-spacing:8px;
+        }
+        table td{
+            padding: 10px 22px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+        }
+        #container > h1{
+            width: 238px;
+            height: 50px;
+            margin: auto;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+        }
+        table td:last-child{
+            background-color: black;
+            color: #FFFFFF;
+        }
+        table tr+tr+tr+tr :nth-child(3){
+            background-color: black;
+            color: #FFFFFF;
+        }
+        table tr+tr+tr+tr :first-child{
+            background-color: #FE0000;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="container">
+        <h1></h1>
+
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>&#215;</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>0</td>
+                        <td>&#61;</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
