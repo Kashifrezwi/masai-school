@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRICING LAYOUT</title>
+    <style>
+      #heading > h1{
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+      }
+      #heading > h1 + p{
+        width: 500px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        color: gray;
+      }
+      #cards-section{
+        display: flex;
+        width: 800px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px;
+      }
+      #cards-section > div{
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+      #cards-section > div > h2{
+        text-align: center;
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 20px;
+      }
+      #cards-section > div > h1{
+        text-align: center;
+        margin: 0px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      #cards-section > div:first-child > h1{
+        color: #0F8610;
+      }
+      #cards-section > div:nth-child(2) > h1{
+        color: #FFA500;
+      }
+      #cards-section > div:last-child > h1{
+        color: blue;
+      }
+      #cards-section > div > p{
+        text-align: center;
+      }
+      #cards-section > div > button{
+        margin: auto;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        padding: 15px 35px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        color: blue;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #FFFFFF;
+
+      }
+      #cards-section > div > h2 + h1 + p{
+        font-style: italic;
+        margin: 0px;
+        font-size: 12px;
+      }
+      #cards-section > div > h2 + h1 + p{
+        line-height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <!-- Cards section -->
+    <div id="cards-section">
+      <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+        <button>Start Now</button>
+      </div>
+
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>$39.00</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+        <button>Start Now</button>
+      </div>
+
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>$59.00</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+        <button>Start Now</button>
+      </div>
+
+    </div>
+  </body>
+</html>
