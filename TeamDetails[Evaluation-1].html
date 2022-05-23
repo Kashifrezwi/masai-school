@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB-101.E.1</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .heading{
+      /* border: 1px solid red; */
+      width: 450px;
+      margin: auto;
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+    .heading h1{
+      font-size: 26px;
+      /* border: 1px solid black; */
+      text-align: center;
+      margin-bottom: 5px;
+      color: teal;
+    }
+    .heading p{
+      font-size: 12px;
+      /* border: 1px solid black; */
+      text-align: center;
+      margin-top: 0px;
+    }
+    #team-members{
+      /* border: 1px solid purple; */
+      width: 1000px;
+      height: 320px;
+      margin: auto;
+      display: flex;
+      margin-bottom: 50px;
+    }
+    #team-stats{
+      /* border: 1px solid blue; */
+      width: 100%;
+      margin: auto;
+      display: flex;
+      margin-bottom: 50px;
+      background-color: #F9B601;
+    }
+    #cards{
+      /* border: 1px solid green; */
+      width: 1200px;
+      height: 200px;
+      margin: auto;
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    #team-members > div {
+      /* border: 1px solid black; */
+      width: 220px;
+      height: 100%;
+      margin: auto;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    #team-members > div > img {
+      width: 100%;
+    }
+    #team-members > div > h2{
+      margin-top: 5px;
+      margin-bottom: 0px;
+      text-align: center;
+      font-size: 20px;
+      /* border: 1px solid black; */
+    }
+    #team-members > div > p{
+      margin-bottom: 5px;
+      text-align: center;
+      font-size: 12px;
+      /* border: 1px solid black; */
+    }
+    #team-stats > div {
+      /* border: 1px solid black; */
+      width: 20%;
+      height: 100%;
+      margin: auto;
+      padding: 20px;
+    }
+    #team-stats > div > h1 {
+      text-align: center;
+      margin-bottom: 0px;
+      font-size: 22px;
+      /* border: 1px solid black; */
+    }
+    #team-stats > div > p {
+      text-align: center;
+      margin-bottom: 20px;
+      /* border: 1px solid black; */
+      font-size: 12px;
+    }
+    #cards > div {
+      /* border: 1px solid black; */
+      width: 30%;
+      height: 100%;
+      margin: auto;
+    }
+    #cards > div > img {
+      width: 10%;
+      margin: auto;
+      margin-top: 20px;
+      display: block;
+    }
+    #cards > div > h2 {
+      margin-bottom: 0px;
+      text-align: center;
+      font-size: 20px;
+    }
+    #cards > div > p {
+      margin-top: 5px;
+      margin: 0px;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Meet Our Expert Members</h1>
+    <p>Who are in extremely love with eco friendly system.</p>
+  </div>
+  <!-- Top-section -->
+  <div id="team-members">
+    <!-- This section should contain 4 children divs, each div should have img,h2,p -->
+    <div>
+      <img src="https://preview.colorlib.com/theme/builder/img/team/xteam-3.jpg.pagespeed.ic.EGpDzKGdSZ.webp" alt="mem1">
+      <h2>Ethel Devis</h2>
+      <p>Managing Director(Sales)</p>
+    </div>
+
+    <div>
+      <img src="https://preview.colorlib.com/theme/builder/img/team/xteam-1.jpg.pagespeed.ic.yZlVhxKOJ_.webp" alt="mem2">
+      <h2>Ethel Devis</h2>
+      <p>Managing Director(Sales)</p>
+    </div>
+
+    <div>
+      <img src="https://preview.colorlib.com/theme/builder/img/team/xteam-3.jpg.pagespeed.ic.EGpDzKGdSZ.webp" alt="mem3">
+      <h2>Ethel Devis</h2>
+      <p>Managing Director(Sales)</p>
+    </div>
+
+    <div>
+      <img src="https://preview.colorlib.com/theme/builder/img/team/xteam-1.jpg.pagespeed.ic.yZlVhxKOJ_.webp" alt="mem4">
+      <h2>Ethel Devis</h2>
+      <p>Managing Director(Sales)</p>
+    </div>
+
+  </div>
+
+  <!-- Medium-section -->
+  <div id="team-stats">
+    <!-- This section should contain 5 children divs, each div should have h1,p -->
+    <div>
+      <h1>101</h1>
+      <p>Projects Completed</p>
+    </div>
+
+    <div>
+      <h1>1032</h1>
+      <p>Really Happy Clients</p>
+    </div>
+
+    <div>
+      <h1>1026</h1>
+      <p>Cups of Coffee Taken</p>
+    </div>
+
+    <div>
+      <h1>1212</h1>
+      <p>In House Professionals</p>
+    </div>
+
+    <div>
+      <h1>1212</h1>
+      <p>Total Tasks Completed</p>
+    </div>
+
+  </div>
+
+  <div class="heading">
+    <h1>Some Features that Made us Unique</h1>
+    <p>Who are in extremely love with eco friendly system.</p>
+  </div>
+
+  <!-- bottom-section -->
+  <div id="cards">
+    <!-- This section should contain 3 children divs, each div should have img,h2,p -->
+    <div>
+      <img src="https://preview.colorlib.com/theme/builder/img/icon/xservice-icon-1.png.pagespeed.ic.QoG5gpYXf0.webp" alt="logo1">
+      <h2>Building Drawings</h2>
+      <p>Lorem ipsum dolor sit amet, consecteturadipis icing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div>
+      <img src="https://preview.colorlib.com/theme/builder/img/icon/xservice-icon-2.png.pagespeed.ic.13PWZUOFS1.webp" alt="logo2">
+      <h2>Painting Constructions</h2>
+      <p>Lorem ipsum dolor sit amet, consecteturadipis icing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div>
+      <img src="https://preview.colorlib.com/theme/builder/img/icon/xservice-icon-3.png.pagespeed.ic.yV783EYUOG.webp" alt="logo3">
+      <h2>Repairing Constructions</h2>
+      <p>Lorem ipsum dolor sit amet, consecteturadipis icing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+  </div>
+</body>
+
+</html>
