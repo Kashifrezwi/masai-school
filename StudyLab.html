@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDY LAB</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        #container {
+            width: 1200px;
+            height: 500px;
+            display: flex;
+        }
+        .first{
+            width: 50%;
+            height: 100%;
+            padding: 0px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        .first :first-child{
+            font-size: 12px;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        .first :nth-child(3){
+            font-size: 16px;
+            margin-top: 0;
+            color: gray;
+        }
+        .first :nth-child(4){
+            font-size: 16px;
+            margin-top: 0;
+            color: gray;
+        }
+        .first :nth-child(5){
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .first :nth-child(5) > p{
+            width: 220px;
+            margin-left: 20px;
+        }
+        .first :nth-child(5) > img{
+            width: 100px;
+        }
+        .first :nth-child(2){
+            margin-top: 10px;
+        }
+        .second {
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 180px);
+            grid-template-rows: repeat(2, 220px);
+            justify-content: center;
+            align-content: center;
+            gap: 20px;
+        }
+        .second img {
+            width: 100px;
+            margin-left: 15px;
+        }
+        .second h2 {
+            font-size: 16px;
+            width: 100px;
+            margin: 0;
+        }
+        .second > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .second > div >  p{
+            font-size: 10px;
+            line-height: 10px;
+            color: gray;
+        }
+        #navbar {
+            margin-bottom: 20px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 20px -20px;
+        }
+        .nav {
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .logo {
+            text-align: center;
+            width: 200px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: rgb(82,9,121);
+            background: linear-gradient(90deg, rgba(82,9,121,1) 0%, rgba(9,9,121,1) 100%, rgba(2,0,36,1) 100%);
+        }
+        .blue {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <h1>StudyLab</h1>
+        </div>
+        <div class="nav">
+            <h4 class="blue">Home</h4>
+            <h4>About</h4>
+            <h4>Course</h4>
+            <h4>Instructor</h4>
+            <h4>Blog</h4>
+            <h4>Contact</h4>
+        </div>
+    </div>
+    <div id="container">
+        <div class="first">
+            <h4 class="blue">WELLCOME TO STUDYLAB</h4>
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>Lorem ipsum dolor sit, amet elit. Hic quas iste nulla, rerum deserunt libero, magnam beatae ipsam ratione nam Animi, expedita vitae porro earum error nam voluptatibus.</p>
+            <p>Lorem ipsum dolor sit amet Magni impedit molestiae molestias dolorem amet earum. Ipsam id fuga asperiores, harum, mollitia, doloribus ut assumenda similique iure delectus atque  et in ullam placeat maiores dignissimos.</p>
+            <div>
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/welcome-video-design-template-6ef541fd151da84baea3a60a489d6a9c_screen.jpg?ts=1577643382" alt="videoTemplate">
+                <p>Learn anything from StudyLab, Watch video</p>
+            </div>
+        </div>
+        <div class="second">
+            <div class="template">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/dream11_d6c8d97a52.svg" alt="abc1">
+                <h2>Dolorem amet earum</h2>
+                <p>Lorem ipsum dolor sit amet Magni impedit  dolorem amet earum molestiae molestias.</p>
+            </div>
+            <div class="template">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg" alt="abc2">
+                <h2>Dolorem amet earum</h2>
+                <p>Lorem ipsum dolor sit amet Magni impedit  dolorem amet earum molestiae molestias.</p>
+            </div>
+            <div class="template">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg" alt="abc">
+                <h2>Dolorem amet earum</h2>
+                <p>Lorem ipsum dolor sit amet Magni impedit  dolorem amet earum molestiae molestias.</p>
+            </div>
+            <div class="template">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/airmeet_93e45faced.svg" alt="abc4">
+                <h2>Dolorem amet earum</h2>
+                <p>Lorem ipsum dolor sit amet Magni impedit  dolorem amet earum molestiae molestias.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
