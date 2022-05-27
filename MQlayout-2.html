@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ LAYOUT-2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0px;
+            width: 100vw;
+            height: 100vh;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+        #navbar {
+            width: 97%;
+            height: 40px;
+            background-color: #FFC300 ;
+            font-size: 26px;
+            padding: 20px;
+        }
+        #blocks {
+            width: 100%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 400px);
+            gap: 50px;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 26px;
+            grid-template-areas: 
+            "b1 b2"
+            ;
+        }
+        #blocks > div {
+            margin: 0 20px;
+        }
+        #blocks > div:nth-child(1){
+            background-color: hsl(0deg 100% 50%);
+            padding: 20px;
+            grid-area: b1;
+        }
+        #blocks > div:nth-child(2){
+            background-color: hsl(130deg 100% 50%);
+            padding: 20px;
+            grid-area: b2;
+        }
+        @media  all and (min-width: 330px) and (max-width: 419px){
+            #blocks {
+                grid-template-columns: repeat(1, 350px);grid-template-rows: repeat(2, 150px);
+                grid-template-areas: 
+                "b1"
+                "b2"
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">Navigation</div>
+    <div id="blocks">
+        <div>Left Box</div>
+        <div>Right Box</div>
+    </div>
+</body>
+</html>

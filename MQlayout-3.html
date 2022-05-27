@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ LAYOUT-3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0px;
+            width: 100vw;
+            height: 100vh;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+        #navbar {
+            width: 97%;
+            height: 40px;
+            background-color: #FFC300 ;
+            font-size: 26px;
+            padding: 20px;
+        }
+        #blocks {
+            width: 100%;
+            height: 80%;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 20px;
+            font-size: 26px;
+            grid-template-areas: 
+            "r1 r1 g1"
+            "r1 r1 g2"
+            "r1 r1 g3"
+            ;
+        }
+        #blocks > div {
+            margin: 10px 0px 0px 20px;
+            font-size: 20px;
+        }
+        #blocks > div:nth-child(1){
+            background-color: hsl(0deg 100% 50%);
+            padding: 20px;
+            grid-area: r1;
+        }
+        #blocks > div:nth-child(2){
+            background-color: hsl(0deg 100% 50%);
+            grid-area: r2;
+        }
+        #blocks > div:nth-child(3){
+            background-color: hsl(130deg 100% 50%);
+            padding: 20px;
+            grid-area: g1;
+        }
+        #blocks > div:nth-child(4){
+            background-color: hsl(0deg 100% 50%);
+            grid-area: r3;
+        }
+        #blocks > div:nth-child(5){
+            background-color: hsl(0deg 100% 50%);
+            grid-area: r4;
+        }
+        #blocks > div:nth-child(6){
+            background-color: hsl(130deg 100% 50%);
+            padding: 20px;
+            grid-area: g2;
+        }
+        #blocks > div:nth-child(7){
+            background-color: hsl(0deg 100% 50%);
+            grid-area: r5;
+        }
+        #blocks > div:nth-child(8){
+            background-color: hsl(0deg 100% 50%);
+            grid-area: r6;
+        }
+        #blocks > div:nth-child(9){
+            background-color: hsl(130deg 100% 50%);
+            padding: 20px;
+            grid-area: g3;
+        }
+        @media  all and (min-width: 420px) and (max-width: 720px){
+            #blocks {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            
+            grid-template-areas: 
+            "r1 r1 r1"
+            "r1 r1 r1"
+            "g1 g2 g3"
+            ;
+            }
+        }
+        @media  all and (min-width: 330px) and (max-width: 419px){
+            #blocks {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            
+            grid-template-areas: 
+            "r1"
+            "g1"
+            "g2"
+            "g3"
+            ;
+            }
+            #blocks > div {
+            margin: 10px 0px 0px 20px;
+            font-size: 20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">Navigation</div>
+    <div id="blocks">
+        <div>LEFT BOX</div>
+        <div></div>
+        <div>RIGHT BOX 1</div>
+        <div></div>
+        <div></div>
+        <div>RIGHT BOX 2</div>
+        <div></div>
+        <div></div>
+        <div>RIGHT BOX 3</div>
+    </div>
+</body>
+</html>
