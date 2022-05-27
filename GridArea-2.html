@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID AREA-2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 120px);
+            grid-template-rows: repeat(2, 80px);
+            gap: 10px;
+            grid-template-areas: 
+            "a a c d"
+            "e f c d";
+        }
+        #container > div {
+            background-color: hsl(0deg 0% 27%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 22px;
+            padding-left: 30px;
+        }
+        #container > div:nth-child(1){
+            grid-area: a;
+        }
+        #container > div:nth-child(2){
+            grid-area: b;
+        }
+        #container > div:nth-child(3){
+            grid-area: c;
+        }
+        #container > div:nth-child(4){
+            grid-area: d;
+        }
+        #container > div:nth-child(5){
+            grid-area: e;
+        }
+        #container > div:nth-child(6){
+            grid-area: f;
+        }
+        #container > div:nth-child(7){
+            grid-area: g;
+        }
+        #container > div:nth-child(8){
+            grid-area: h;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>A</div>
+        <div></div>
+        <div>B</div>
+        <div>E</div>
+        <div>C</div>
+        <div>D</div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

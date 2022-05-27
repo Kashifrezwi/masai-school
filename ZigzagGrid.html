@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID AREA-1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(5, 80px);
+            grid-template-rows: repeat(3, 80px);
+            gap: 30px;
+            grid-template-areas: 
+            "a b b b e"
+            "f f f i j"
+            "k l m m m";
+        }
+        #container > div {
+            background-color: hsl(168deg 57% 30%);
+        }
+        #container > div:nth-child(1){
+            grid-area: a;
+        }
+        #container > div:nth-child(2){
+            grid-area: b;
+        }
+        #container > div:nth-child(3){
+            grid-area: c;
+        }
+        #container > div:nth-child(4){
+            grid-area: d;
+        }
+        #container > div:nth-child(5){
+            grid-area: e;
+        }
+        #container > div:nth-child(6){
+            grid-area: f;
+        }
+        #container > div:nth-child(7){
+            grid-area: g;
+        }
+        #container > div:nth-child(8){
+            grid-area: h;
+        }
+        #container > div:nth-child(9){
+            grid-area: i;
+        }
+        #container > div:nth-child(10){
+            grid-area: j;
+        }
+        #container > div:nth-child(11){
+            grid-area: k;
+        }
+        #container > div:nth-child(12){
+            grid-area: l;
+        }
+        #container > div:nth-child(13){
+            grid-area: m;
+        }
+        #container > div:nth-child(14){
+            grid-area: n;
+        }
+        #container > div:nth-child(15){
+            grid-area: o;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
